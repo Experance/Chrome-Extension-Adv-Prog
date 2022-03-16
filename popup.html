@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-platform="chromium" data-application="chrome" data-store="chrome">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <div id="title">
+    <title>Homework Distraction Blocker/Timer</title>
+    </div>
+
+    <link href="popup.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <img src="logoname.png" alt="logo">
+      
+      <input id="settings" type="image" src="settingpic.png" height="20" width="20"/>
+      
+    </header>
+    <script src="popup.js"></script>
+    
+
+    <main>
+
+    <div id="url">
+      <p>Input URL Here:</p>
+    </div>
+
+    <div id="urlinput">
+      <input id="inputtext" type="url" placeholder="https://example.com" pattern="https://.*" width="20">
+    </div>
+
+    <div>
+      <p id="timePeriod">
+        Productivity time period: <span id="timePeriod2">i.e. from 4:00 pm to 6:00 pm </span>
+      </p>
+      
+    </div>
+    <div id="time">
+
+    <div class="time">
+      <small>
+        Start Time:
+      </small>
+    </div>  
+
+    <div class="time">
+      <input type="time" name="Start Time" placeholder="00:00" min="01:00" max="12:59" required>
+    </div>
+    
+    <div class="time">
+      <small>
+        End Time:
+      </small>
+    </div>
+    
+    <div class="time">
+      <input type="time" name="End Time"  placeholder="00:00" min="01:00" max="12:59" required>
+    </div>
+
+    
+
+    </div>
+    <div id="bottom">
+      <p>
+        <small>
+          <!-- Below in the second span, the relation attribute as well as the target attribute I got 
+            from https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/. 
+            The rel is used for security reasons-->
+          <span id="underline">Current Settings:</span> Work 30 minutes with a 5 minute break (click <span id="underline2"><a href="options.html" target="_blank" rel="noreferrer noopener">here</a></span> to change settings)
+        </small>
+      </p>
+    </div>
+  </main>
+  </body>
+</html>
