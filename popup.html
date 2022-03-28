@@ -25,51 +25,59 @@
     <div id="url">
       <p>Input URL Here:</p>
     </div>
-
     <div id="urlinput">
-      <input id="inputtext" type="url" placeholder="https://example.com" pattern="https://.*" width="20">
-    </div>
+      <div>
+        <input id="inputtext" type="text" placeholder="https://example.com" width="20">
+      </div>
 
-    <div>
-      <p id="timePeriod">
-        Productivity time period: <span id="timePeriod2">i.e. from 4:00 pm to 6:00 pm </span>
-      </p>
-      
+      <div>
+        <button id="urlbutton" type="submit" disabled>Add</button>
+      </div>
+    </div>
+    <div id=""timeexplained>
+      <div>
+        <p id="timePeriod">
+          Productivity time period: <span id="timePeriod2">i.e. from 4:00 pm to 6:00 pm </span>
+        </p>
+        
+      </div>
     </div>
     <div id="time">
 
-    <div class="time">
-      <small>
-        Start Time:
-      </small>
-    </div>  
+      <div class="start">
+        <small>
+          Start:
+        </small>
+      </div>  
 
-    <div class="time">
-      <input type="time" name="Start Time" placeholder="00:00" min="01:00" max="12:59" required>
-    </div>
-    
-    <div class="time">
-      <small>
-        End Time:
-      </small>
-    </div>
-    
-    <div class="time">
-      <input type="time" name="End Time"  placeholder="00:00" min="01:00" max="12:59" required>
-    </div>
+      <div class="starttime">
+        <input type="time" name="Start Time" placeholder="00:00" min="01:00" max="12:59" required>
+      </div>
+      
+      <div class="start">
+        <small>
+          End:
+        </small>
+      </div>
+      
+      <div class="starttime">
+        <input type="time" name="End Time"  placeholder="00:00" min="01:00" max="12:59" required>
+      </div>
 
     
 
     </div>
     <div id="bottom">
-      <p>
-        <small>
-          <!-- Below in the second span, the relation attribute as well as the target attribute I got 
+      <div>
+        <p>
+         <small> 
+           <!-- Below in the second span, the relation attribute as well as the target attribute I got 
             from https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/. 
-            The rel is used for security reasons-->
-          <span id="underline">Current Settings:</span> Work 30 minutes with a 5 minute break (click <span id="underline2"><a href="options.html" target="_blank" rel="noreferrer noopener">here</a></span> to change settings)
-        </small>
-      </p>
+            The rel is used for security reasons https://www.youtube.com/watch?v=P-jKHhr6YxI-->
+           <span id="underline">Current Timer Settings:</span> Work 30 minutes with a 5 minute break (click <span id="underline2"><a href="options.html" target="_blank" rel="noreferrer noopener">here</a></span> to change settings)
+         </small>
+        </p>
+      </div>
     </div>
   </main>
   </body>

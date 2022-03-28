@@ -62,13 +62,13 @@ header {
 
 #time {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-evenly;    
     flex-direction: row;
 }
 
 #bottom {
     display: flex;
-    justify-content: center;
+    justify-self: center;
 }
 
 #timePeriod {
@@ -78,3 +78,20 @@ header {
 #timePeriod2 {
     font-size: 15px;
 }
+
+.start {
+    position: relative;
+    bottom: 0px;
+}
+
+#timeexplained{
+    display: flex;
+    justify-self: center;
+}
+
+#urlbutton {
+    background-color: aqua;
+    height: 26px;
+
+}
+
