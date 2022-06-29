@@ -1,14 +1,73 @@
+<!-- HTML file for the settings page-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-platform="chromium" data-application="chrome" data-store="chrome"></html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <div id="title">
-        <title>
-            Homework Distraction Blocker & Timer Options
-        </title>
-    </div>
+    
+    <title id="title">
+        Distraction Blocker & Timer Options
+    </title>
+    <link rel="icon" type="image/x-icon" href="16.png">
 
     <link href="options.css" rel="stylesheet" type="text/css" />
+    
+    <script src="options.js"></script>
+
+
+    <div class="tab">
+        <img src="logoname.png" alt="Logo">
+        <h2 id="word">Settings</h2>
+        <button class="subtab" id="AbtPg" role="tabpanel">About</button>
+        <button class="subtab" id="WebBlk" role="tabpanel">Blocked Websites</button>
+        <button class="subtab" id="Setngs" role="tabpanel">Configure</button>
+    </div>
+
+    
+    <div id="AboutPage" class="subtabinfo"> 
+        <h1>About Page</h1>
+        <p id="explain">This extension blocks websites (closes them once you open them) that 
+            you choose, which you can input through the settings or through the popup.
+
+            You can also right click on a page and click the "Add Website" button
+            which will add the website you are currently on into the block list.
+        </p>
+
+    </div>
+
+    <div id="webblock" class="subtabinfo"> 
+        <h1>Websites Blocked</h1>
+        <div id="url">
+            <p>Input URL Here: </p>
+            <p id="incorrect"> </p>
+        </div>
+          <div id="urlinput">
+            <div>
+              <input id="inputtext" type="text" placeholder="e.g. www.example.com" width="50" height="30">
+            </div>
+
+            <div>
+              <button id="urlbutton" type="submit" style="width:70px; height:30px" disabled>Add</button>
+            </div>
+
+            <div>
+                <button id="clear" type="submit" style="width:100px; height:50px">Clear Blocked Websites</button>
+            </div>
+        </div>
+
+        <div id="container">
+            <hr id="line">
+            <p id="nowebsites">You don't currently have any added websites to block</p>
+            
+        </div>
+    </div>
+
+    <div id="settings" class="subtabinfo"> 
+        <h1>Configure</h1>
+        <p>Customize your time:</p>
+        <p> TO BE COMPLETED</p>
+
+    </div>
 
 </head>

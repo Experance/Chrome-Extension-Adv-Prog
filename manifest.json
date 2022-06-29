@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
     "name": "Homework Distraction Blocker/Timer",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Blocks distracting websites during your work time",
-    "permissions": ["storage", "activeTab", "scripting"],
+    "permissions": ["storage", "activeTab", "scripting", "unlimitedStorage", "contextMenus", "webNavigation", "tabs", "notifications"],
     "action": { 
         "default_popup": "popup.html",
         "default_icon": {
@@ -19,15 +19,16 @@
         "48": "48.png",
         "128": "128.png"
     },
+    "background": {
+        "service_worker": "background.js"
+        
+    },
+
+    
     
     
 
-    "content_scripts": [{
-        "matches": ["https://www.youtube.com/*"],
-        "css":["main.css"],
-        "js":["main.js"]
 
-    }],
 
     "options_page": "options.html"
 

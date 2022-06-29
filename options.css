@@ -1,5 +1,136 @@
+/* basic styling for the overall content */
 body {
     background-color: blanchedalmond;
+    overflow-y: scroll;
     display: flex;
     justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    
+    
+}
+
+/* padding and border are included in the width and height */
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: -1px;
+    margin-left: -1px;
+    padding: 0.5rem -0.1rem;
+    
+    /* the below command of border-radius was obtained from analyzing Adblock Plus's settings (options) page */
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    color: inherit;
+     
+  } 
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: blanchedalmond;
+    color: black;
+    padding: 22px;
+    padding-left: 16px;
+    padding-right: 50px;
+    width: 100%;
+    border-right: 0.1px solid white;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    min-width: 250.012px;
+
+
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #1232;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: white;
+    border: 1px solid black;
+    min-width: 250.012px;
+    
+  }
+  
+  /* tab info content */
+  .subtabinfo {
+    
+    float: left;
+    padding: 0px 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    border: 1px solid #ccc;
+    width: 70%; 
+    border-left: none;
+    
+    background-color: white;
+    border: 1px solid black;
+    z-index: 3;
+    border-radius: var(--border-radius);
+    height: 100%;
+    min-height: 350px;
+    
+  }
+
+  /* styling for main title "Settings" below the img */
+  #word {
+    background: blanchedalmond;
+    font-size: 25px;
+    
+  }
+
+  /* applies an index level for a tab button */
+  #AbtPg {
+    z-index: 1;
+  }
+
+  /* applies an index level for a tab button */
+  #WebBlk {
+    z-index: 1;
+  }
+
+  /* applies an index level for a tab button */
+  #Setngs {
+    z-index: 1;
+  }
+
+  /* for a sentence in the html when there are no websites added to the block list */
+  #nowebsites {
+    padding-left: 30px;
+  }
+
+  /* styling for title of tab "big section" */
+  h1 {
+    font-size: 50px;
+    font-weight: 1;
+  }
+
+  /* logo image*/
+  img {
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+
+  /* style the about page info */
+  #explain {
+    font-size: 20px;
+  }
+
+/* styleing for when incorrect input */
+#incorrect {
+  position: relative;
+  top: 0.6em;
+  color: red;
+  font-size: 15px;
 }
